@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .contact-card i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #4285F4;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box input,
+        .input-box textarea {
+            width: calc(100% - 22px);
+            /* Adjusted width */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            margin-right: 10px;
+            /* Added margin */
+        }
+
+        .input-box textarea {
+            height: 100px;
+        }
+
+        button[type="submit"] {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+
+        .contact-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* Added shadow */
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+        }
+
+        html,
+        body {
+            background-color: #F4B400;
+            font-size: 14px;
+            /* Makes 1rem = 10px */
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form class="contact-form">
+            <div class="input-box">
+                <input type="text" placeholder="Your Name">
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Your Email">
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-details">
+        <p>Email: contact@gdsc.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 GDSC Street, City, Country</p>
+    </div>
+</body>
+
+</html>

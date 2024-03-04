@@ -42,3 +42,11 @@ def our_team_view(request):
 
 def my_view(request):
     return render(request, 'image.html')
+
+
+def events(request):
+    return render(request, 'events.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
