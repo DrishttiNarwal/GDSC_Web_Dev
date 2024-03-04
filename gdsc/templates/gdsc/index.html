@@ -1,0 +1,245 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC Website</title>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        window.onscroll = function () {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                loadAboutContent();
+            }
+        };
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            /* Set full viewport height */
+            background-color: white;
+            /* Set background color to white */
+        }
+
+        /* Add animation for wrapper div */
+        .wrapper {
+            position: absolute;
+            top: 50px;
+            /* Adjust as needed to leave space for the heading */
+            left: 0;
+            width: calc(100% - 30px);
+            /* Adjust width to leave space from right border */
+            height: calc(100% - 50px);
+            /* Adjust height to leave space for the heading */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .content {
+            position: absolute;
+            top: 0;
+            /* Align to the top */
+            left: 0;
+            /* Align to the left */
+            display: flex;
+            align-items: center;
+        }
+
+        .content img {
+            max-width: 80px;
+            /* Reduce the maximum width of the logo */
+            /* Adjust the maximum width of the logo */
+            margin-top: -20px;
+            margin-left: 40px;
+            margin-right: 10px;
+            /* Adjust the margin to move the image up */
+        }
+
+        .gdsc-text {
+            font-size: 26px;
+            /* Adjust the font size as needed */
+            color: grey;
+            /* Change text color to grey */
+            font-family: 'Google Sans', sans-serif;
+            /* Use Google Sans font */
+        }
+
+        .navbar {
+            position: absolute;
+            top: 5px;
+            /* Adjust position */
+            right: 30px;
+            /* Adjust right distance from the border */
+            padding: 10px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .navbar a:hover {
+            color: black;
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Include Roboto font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <!-- Include Google Sans font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Or use <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> for Great Vibes font -->
+
+</head>
+
+<body>
+
+    <body>
+
+
+
+        <!-- Left border with doodle -->
+        <div class="left-border">
+            <img src="{% static 'gdsc/images/left_border.png' %}" width="30" height="830" />
+        </div>
+
+        <!-- Right border with doodle -->
+        <div class="right-border">
+            <img src="{% static 'gdsc/images/right_border.png' %}" width="30" height="830" />
+        </div>
+
+
+
+
+
+        <div class="content">
+            <img src="{% static 'gdsc/images/logo.png' %}">
+
+            <h2><span class="gdsc-text">Google Developer Student Clubs - SIT Pune</span></h2>
+
+
+        </div>
+
+        <div class="welcome-text">
+            <h3>Welcome to the Google Developer Student Clubs (GDSC) at SIT Pune!</h3>
+            <p>Join our community of tech enthusiasts,
+                innovators, and learners as we embark on a journey of exploration,
+                collaboration, and growth in the world of
+                technology.</p>
+        </div>
+
+        <div id="about-us">
+            <!-- Content of the About Us section goes here -->
+        </div>
+
+
+
+
+    </body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="about.html">About Us</a>
+        <a href="#">Tracks</a>
+        <a href="#">Events</a>
+        <a href="our_team.html">Our Team</a>
+        <a href="#">Contact</a>
+    </nav>
+    <!-- Newly added HTML -->
+    <main class="Main" role="main">
+
+        <div id="borderBlack" class="border">
+            <div class="border-inner"></div>
+            <div class="border-inner"></div>
+            <div class="border-inner"></div>
+            <div class="border-inner"></div>
+        </div>
+        <div class="wrapper">
+            <!-- SVG animation code -->
+            <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 105 105" width="100%" height="100%"
+                style="position: absolute; bottom: 0; right: 0;">
+                <defs>
+                    <style>
+                        @keyframes rotate {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        .out-top {
+                            animation: rotate 30s linear infinite;
+                            transform-origin: 13px 25px;
+                        }
+
+                        .in-top {
+                            animation: rotate 30s linear infinite;
+                            transform-origin: 13px 25px;
+                        }
+
+                        .out-bottom {
+                            animation: rotate 50s linear infinite;
+                            transform-origin: 84px 93px;
+                        }
+
+                        .in-bottom {
+                            animation: rotate 50s linear infinite;
+                            transform-origin: 84px 93px;
+                        }
+                    </style>
+                </defs>
+                <path fill="#DB4437" class="out-top"
+                    d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+                <path fill="#4285F4" class="in-top"
+                    d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+                <path fill="#F4B400" class="out-bottom"
+                    d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+                <path fill="#0F9D58" class="in-bottom"
+                    d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+            </svg>
+        </div>
+
+        <!-- Join Us button -->
+        <div class="join-button">
+            <a href="#" class="join-link">Join Us</a>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

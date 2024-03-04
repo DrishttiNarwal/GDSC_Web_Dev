@@ -1,0 +1,513 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'teamstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'confetti.css' %}">
+    <title>Our Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        html,
+        body {
+            background-color: #4285F4;
+            font-size: 10px;
+            /* Makes 1rem = 10px */
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="confetti-container">
+        <div class="confetti">
+            <i style="--bg: red; --speed: 20" class="square"></i>
+            <i style="--bg: green; --speed: 24" class="rectangle"></i>
+            <i style="--bg: white; --speed: 13" class="hexagram"></i>
+            <i style="--bg: yellow; --speed: 10" class="pentagram"></i>
+            <i style="--bg: purple; --speed: 17" class="dodecagram"></i>
+            <i style="--bg: pink; --speed: 15" class="wavy-line"></i>
+        </div>
+    </div>
+
+    <div class="confetti-container">
+        <div class="confetti">
+            <i style="--speed: 10; --bg: yellow" class="square"></i>
+            <i style="--speed: 18; --bg: white" class="pentagram"></i>
+            <i style="--speed: 29; --bg: green" class="rectangle"></i>
+            <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+            <i style="--speed: 33; --bg: red" class="pentagram"></i>
+            <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 5; --bg: blue" class="wavy-line"></i>
+            <i style="--speed: 40; --bg: white" class="square"></i>
+            <i style="--speed: 17; --bg: green" class="rectangle"></i>
+            <i style="--speed: 25; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 15; --bg: yellow" class="wavy-line"> </i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 25; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 23; --bg: pink" class="wavy-line"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 37; --bg: pink" class="wavy-line"></i>
+            <i style="--speed: 36; --bg: white" class="hexagram"></i>
+            <i style="--speed: 32; --bg: green" class="wavy-line"></i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 29; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 30; --bg: pink" class="rectangle"></i>
+            <i style="--speed: 30; --bg: red" class="square"></i>
+            <i style="--speed: 18; --bg: red" class="pentagram"></i>
+            <i style="--speed: 19; --bg: green" class="rectangle"></i>
+            <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+            <i style="--speed: 23; --bg: red" class="pentagram"></i>
+            <i style="--speed: 34; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 39; --bg: pink" class="wavy-line"></i>
+            <i style="--speed: 40; --bg: purple" class="square"></i>
+            <i style="--speed: 21; --bg: green" class="rectangle"></i>
+            <i style="--speed: 14; --bg: white" class="square"></i>
+            <i style="--speed: 38; --bg: green" class="rectangle"></i>
+            <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 21; --bg: white" class="hexagram"></i>
+            <i style="--speed: 17; --bg: purple" class="wavy-line"></i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 23; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+            <i style="--speed: 13; --bg: red" class="pentagram"></i>
+            <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 19; --bg: cyan" class="wavy-line"></i>
+            <i style="--speed: 15; --bg: steelblue" class="square"></i>
+            <i style="--speed: 10; --bg: yellow" class="square"></i>
+            <i style="--speed: 18; --bg: white" class="pentagram"></i>
+            <i style="--speed: 29; --bg: green" class="rectangle"></i>
+            <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+            <i style="--speed: 33; --bg: red" class="pentagram"></i>
+            <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 5; --bg: white" class="wavy-line"></i>
+            <i style="--speed: 40; --bg: purple" class="square"></i>
+            <i style="--speed: 17; --bg: green" class="rectangle"></i>
+            <i style="--speed: 25; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 15; --bg: cyan" class="wavy-line"> </i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 45; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 37; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 26; --bg: white" class="hexagram"></i>
+            <i style="--speed: 32; --bg: cyan" class="wavy-line"></i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 45; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 50; --bg: pink" class="rectangle"></i>
+            <i style="--speed: 30; --bg: red" class="square"></i>
+            <i style="--speed: 18; --bg: red" class="pentagram"></i>
+            <i style="--speed: 19; --bg: green" class="rectangle"></i>
+            <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+            <i style="--speed: 23; --bg: red" class="pentagram"></i>
+            <i style="--speed: 33; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 39; --bg: white" class="wavy-line"></i>
+            <i style="--speed: 40; --bg: orange" class="square"></i>
+            <i style="--speed: 21; --bg: green" class="rectangle"></i>
+            <i style="--speed: 14; --bg: white" class="square"></i>
+            <i style="--speed: 38; --bg: green" class="rectangle"></i>
+            <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 34; --bg: white" class="hexagram"></i>
+            <i style="--speed: 17; --bg: indigo" class="wavy-line"></i>
+            <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+            <i style="--speed: 23; --bg: white" class="square"></i>
+            <i style="--speed: 18; --bg: green" class="rectangle"></i>
+            <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+            <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+            <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+            <i style="--speed: 13; --bg: red" class="pentagram"></i>
+            <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+            <i style="--speed: 19; --bg: purple" class="wavy-line"></i>
+            <i style="--speed: 15; --bg: cyan" class="square"></i>
+        </div>
+    </div>
+
+    <div class="confetti-container">
+        <div class="confetti">
+            <i class="square"></i>
+            <i class="rectangle"></i>
+            <i class="hexagram"></i>
+            <i class="pentagram"></i>
+            <i class="dodecagram"></i>
+            <i class="wavy-line"></i>
+        </div>
+    </div>
+
+    <div class="container text-center py-5">
+        <h3>Meet Our Team</h3>
+        <h4 class="text-muted">United under GDSC's banner, we inspire, innovate, and elevate as one unstoppable force.
+        </h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core1.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Megha Beria</h5>
+                        <p class="card-text">CP</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core2.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Uday Badola</h5>
+                        <p class="card-text">Podcast Co-Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core3.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruhani</h5>
+                        <p class="card-text">Design and Media Co-Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core4.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yajushreshtha Shukla</h5>
+                        <p class="card-text">Podcast Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core5.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sumedh Dongre</h5>
+                        <p class="card-text">Flutter Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core6.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Siddharth Prabhakar</h5>
+                        <p class="card-text">Android</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core7.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chahak Sengar</h5>
+                        <p class="card-text">Cloud</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core8.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yash Parkhi</h5>
+                        <p class="card-text">Game Development Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core9.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tawishi Gupta</h5>
+                        <p class="card-text">Design and Media Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core10.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ria Vinod</h5>
+                        <p class="card-text">Events</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core11.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Prachi Lal</h5>
+                        <p class="card-text">Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core12.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dhwani Parekh</h5>
+                        <p class="card-text">Artificial Intelligence Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core13.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ananya Vashisht</h5>
+                        <p class="card-text">Non-tech Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core14.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shardul Kacheriya</h5>
+                        <p class="card-text">Podcast Co-Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core15.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Divyansh Kumar</h5>
+                        <p class="card-text">CP</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core16.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Srishti Tripathi</h5>
+                        <p class="card-text">Podcast</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core17.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dev Bhanushali</h5>
+                        <p class="card-text">Flutter Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core18.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gautam Ranjhas</h5>
+                        <p class="card-text">Cloud</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'gdsc/images/core19.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Smriti Sinha</h5>
+                        <p class="card-text">Artificial Intelligence Co-Lead</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('check');
+            const confettiContainer = document.querySelector('.confetti-container');
+
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    confettiContainer.classList.add('fall');
+                } else {
+                    confettiContainer.classList.remove('fall');
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
