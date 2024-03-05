@@ -1,10 +1,15 @@
-function loadAboutContent() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "about.html", true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById("aboutContent").innerHTML = xhr.responseText;
-        }
-    };
-    xhr.send();
-}
+const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+    span.addEventListener('click', (e) => {
+        e.target.classList.add('active');
+    });
+    span.addEventListener('animationend', (e) => {
+        e.target.classList.remove('active');
+    });
+
+    // Initial animation
+    setTimeout(() => {
+        span.classList.add('active');
+    }, 750 * (idx + 1))
+});

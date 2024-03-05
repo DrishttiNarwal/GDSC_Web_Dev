@@ -1,19 +1,14 @@
-body {
-    background-color: #ac1d69;
-}
-
 svg {
     position: fixed;
     top: 0;
-    right: -10;
-    width: 98%;
-    /* Adjust the width as needed */
-    height: 100vh;
-    z-index: -1;
-    /* Ensure the SVG stays behind other elements */
+    right: 0;
+    width: 100%;
+    /* Adjusted width to 100% */
+    height: 100%;
+    /* Adjusted height to 100% */
+    z-index: 1;
+    /* Assuming you've changed the z-index to 1 as per previous suggestion */
 }
-
-
 
 .links {
     position: fixed;
@@ -33,21 +28,12 @@ a:hover {
     text-decoration: underline;
 }
 
-a img.icon {
-    display: inline-block;
-    height: 1em;
-    margin: 0 0 -0.1em 0.3em;
-}
-
-/* Join Us button */
 .join-button {
     position: absolute;
-    top: 50%;
-    /* Position the button at the vertical center */
+    bottom: 50px;
+    /* Adjust the distance from the bottom */
     left: 50%;
-    /* Position the button at the horizontal center */
-    transform: translate(-50%, -50%);
-    /* Center the button both horizontally and vertically */
+    transform: translateX(-50%);
 }
 
 .join-link {
@@ -66,54 +52,10 @@ a img.icon {
 }
 
 .join-link:hover {
-    background-color: #357AE8;
+    background-color: darkgreen;
     /* Button background color on hover */
 }
 
-body {
-    background-color: #ac1d69;
-    margin: 0;
-    /* Remove default margin to ensure the borders cover the entire viewport */
-}
-
-.left-border,
-.right-border {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 30px;
-    /* Adjust the width of the borders as needed */
-    background-color: rgb(1, 10, 12);
-    /* Adjust the color of the borders as needed */
-    z-index: -1;
-    /* Ensure the borders stay behind other content */
-}
-
-.left-border {
-    left: 0;
-    /* Adjust the left position */
-}
-
-.right-border {
-    right: 0;
-    /* Adjust the right position */
-}
-
-
-
-
-.welcome-text {
-    position: absolute;
-    top: 120px;
-    left: 800px;
-    right: 40px;
-    font-size: 18px;
-    color: black;
-    background-color: #7FB3D5;
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 30px rgba(80, 14, 211, 0.1);
-    font-family: 'Lobster', cursive;
-    /* Use Lobster font */
-    /* Or use font-family: 'Great Vibes', cursive; for Great Vibes font */
+.word span.wiggle {
+    animation: wiggle 0.5s ease-in-out infinite alternate;
 }
