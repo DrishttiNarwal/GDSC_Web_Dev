@@ -59,3 +59,28 @@ a:hover {
 .word span.wiggle {
     animation: wiggle 0.5s ease-in-out infinite alternate;
 }
+
+.navbar a[href="about.html"] {
+    color: #FFAB00;
+    font-weight: bold;
+}
+
+.navbar a[href="tracks.html"] {
+    color: #EA4335;
+    font-weight: bold;
+}
+
+.navbar a[href="events.html"] {
+    color: #008744;
+    font-weight: bold;
+}
+
+.navbar a[href="our_team.html"] {
+    color: #4285F4;
+    font-weight: bold;
+}
+
+.navbar a[href="contact.html"] {
+    color: black;
+    font-weight: bold;
+}

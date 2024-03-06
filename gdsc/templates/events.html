@@ -1,21 +1,129 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Tracks</title>
-    <style>
-        html,
-        body {
-            background-color: #0F9D58;
-            font-size: 10px;
-            /* Makes 1rem = 10px */
-            height: 100%;
-        }
-    </style>
+    <title>Events</title>
+    <link rel="stylesheet" href="{% static 'past_events.css' %}">
+
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="timeline">
+        <div class="container left-container">
+            <img src="{% static 'gdsc/images/event_logo.jpg' %}">
+            <div class="text-box">
+
+                <h2>AI in HealthCare</h2>
+                <small>October 20th-21st, 2023</small>
+
+                <div class="event-highlights">
+                    <ul>
+                        <li>Python basics, ML, DL, and hands-on sessions.</li>
+                        <li>Keynote addresses on Python libraries and ML.</li>
+                        <li>Technical sessions on Python fundamentals and preprocessing.</li>
+                        <li>Hands-on activities with Google Colab and projects.</li>
+                    </ul>
+                </div>
+                <p>The Google Developer Student Clubs (GDSC) organized "The AI in Healthcare Workshop: from Python
+                    Basics to Neural Networks" with the goal of catering to a diverse audience. The workshop welcomed
+                    beginners without prior knowledge of AI/ML or DL, as well as individuals seeking to reinforce their
+                    fundamentals and explore the fascinating realm of AI in the healthcare domain. The event garnered an
+                    overwhelming response from students and technology enthusiasts.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+
+        <div class="container right-container">
+            <img src="{% static 'gdsc/images/event_logo.jpg' %}">
+            <div class="text-box">
+                <h2>Introduction to Open-Source</h2>
+                <small>October 6th, 2023</small>
+                <div class="event-highlights">
+                    <ul>
+                        <li>Intro to Open Source: Understanding foundational principles.</li>
+                        <li>Hands-on Git and GitHub: Learning version control basics.</li>
+                        <li>Contribution Exploration: Exploring diverse ways to contribute.</li>
+                        <li>Best Practices: Discovering essential tools and techniques.</li>
+                    </ul>
+                </div>
+                <p>The Open-Source Workshop, a collaborative effort by the Symbiosis Open-Source Society and Google
+                    Developer Student Clubs (GDSC), aimed to champion open-source software development and equip
+                    participants with essential knowledge and skills in this field. The workshop garnered an
+                    enthusiastic response from students and technology enthusiasts.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+
+        <div class="container left-container">
+            <img src="{% static 'gdsc/images/event_logo.jpg' %}">
+            <div class="text-box">
+                <h2>Introduction to Game Development</h2>
+                <small>August 18th, 2023</small>
+                <div class="event-highlights">
+                    <ul>
+                        <li>Interactive Pygame session for practical engagement.</li>
+                        <li>Creative sprite design with Piskell, fostering participant creativity.</li>
+                        <li>Introduction to SFXR for 8-bit audio amidst noise challenges.</li>
+                        <li>Participant feedback highlights workshop success.</li>
+                    </ul>
+                </div>
+                <p>The "Introduction to Game Development" workshop was held on Friday, August 18, 2023, from
+                    14:35 to 16:15. The workshop aimed to provide participants with hands-on experience in using
+                    various tools and techniques related to game development. The tools covered in the workshop
+                    included Pygame, Piskell, and SFXR. The workshop was designed to introduce participants to
+                    the basics of game development, allowing them to create simple games, design sprites, and
+                    generate 8-bit audio.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="{% static 'gdsc/images/event_logo.jpg' %}">
+            <div class="text-box">
+                <h2>Flutter Workshop</h2>
+                <small>August 12th, 2023</small>
+                <div class="event-highlights">
+                    <ul>
+                        <li>Engaged participants throughout the workshop.</li>
+                        <li>Proactive addressing of questions, fostering interaction.</li>
+                        <li>Hands-on session for real-time Flutter application.</li>
+                        <li>Overwhelmingly positive feedback, especially for hands-on segment.</li>
+                    </ul>
+                </div>
+                <p>The Flutter Workshop event was a successful and informative session aimed at introducing participants
+                    to the world of Flutter, a popular open-source UI software development toolkit created by Google.
+                    The event covered various aspects of Flutter, from its fundamental concepts to practical hands-on
+                    experience in modifying a sample Flutter app.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="{% static 'gdsc/images/event_logo.jpg' %}">
+            <div class="text-box">
+                <h2>Game Dev’s Workshop</h2>
+                <small>Septermber 9th, 2023</small>
+                <div class="event-highlights">
+                    <ul>
+                        <li>Engaging content on Pygame, Sfxr, and Piskel.</li>
+                        <li>Active involvement of over 25 participants.</li>
+                        <li>Completion of a mini Dino game.</li>
+                        <li>Announcement of project team selection.</li>
+                    </ul>
+                </div>
+                <p>The Google Developer Student Clubs (GDSC) organized a highly successful workshop on
+                    September 9th, 2023, titled "Customizing the Dino Game with Pygame, Sfxr, and Piskel." The
+                    workshop aimed to provide participants with a hands-on experience in game development using
+                    Python and explore sound effects generation tools. With more than 25 enthusiastic participants
+                    in attendance, it became a remarkable Saturday gathering.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

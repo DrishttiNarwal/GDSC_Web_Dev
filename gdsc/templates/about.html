@@ -4,13 +4,224 @@
 <html lang="en">
 
 <head>
-
-
+    <link rel="stylesheet" href="{% static 'about_page.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CareConnect</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wk-desk-1 {
+            width: 8.333333%;
+        }
+
+        .wk-desk-2 {
+            width: 16.666667%;
+        }
+
+        .wk-desk-3 {
+            width: 25%;
+        }
+
+        .wk-desk-4 {
+            width: 33.333333%;
+        }
+
+        .wk-desk-5 {
+            width: 41.666667%;
+        }
+
+        .wk-desk-6 {
+            width: 50%;
+        }
+
+        .wk-desk-7 {
+            width: 58.333333%;
+        }
+
+        .wk-desk-8 {
+            width: 66.666667%;
+        }
+
+        .wk-desk-9 {
+            width: 75%;
+        }
+
+        .wk-desk-10 {
+            width: 83.333333%;
+        }
+
+        .wk-desk-11 {
+            width: 91.666667%;
+        }
+
+        .wk-desk-12 {
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .wk-ipadp-1 {
+                width: 8.333333%;
+            }
+
+            .wk-ipadp-2 {
+                width: 16.666667%;
+            }
+
+            .wk-ipadp-3 {
+                width: 25%;
+            }
+
+            .wk-ipadp-4 {
+                width: 33.333333%;
+            }
+
+            .wk-ipadp-5 {
+                width: 41.666667%;
+            }
+
+            .wk-ipadp-6 {
+                width: 50%;
+            }
+
+            .wk-ipadp-7 {
+                width: 58.333333%;
+            }
+
+            .wk-ipadp-8 {
+                width: 66.666667%;
+            }
+
+            .wk-ipadp-9 {
+                width: 75%;
+            }
+
+            .wk-ipadp-10 {
+                width: 83.333333%;
+            }
+
+            .wk-ipadp-11 {
+                width: 91.666667%;
+            }
+
+            .wk-ipadp-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wk-tab-1 {
+                width: 8.333333%;
+            }
+
+            .wk-tab-2 {
+                width: 16.666667%;
+            }
+
+            .wk-tab-3 {
+                width: 25%;
+            }
+
+            .wk-tab-4 {
+                width: 33.333333%;
+            }
+
+            .wk-tab-5 {
+                width: 41.666667%;
+            }
+
+            .wk-tab-6 {
+                width: 50%;
+            }
+
+            .wk-tab-7 {
+                width: 58.333333%;
+            }
+
+            .wk-tab-8 {
+                width: 66.666667%;
+            }
+
+            .wk-tab-9 {
+                width: 75%;
+            }
+
+            .wk-tab-10 {
+                width: 83.333333%;
+            }
+
+            .wk-tab-11 {
+                width: 91.666667%;
+            }
+
+            .wk-tab-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .wk-mobile-1 {
+                width: 8.333333%;
+            }
+
+            .wk-mobile-2 {
+                width: 16.666667%;
+            }
+
+            .wk-mobile-3 {
+                width: 25%;
+            }
+
+            .wk-mobile-4 {
+                width: 33.333333%;
+            }
+
+            .wk-mobile-5 {
+                width: 41.666667%;
+            }
+
+            .wk-mobile-6 {
+                width: 50%;
+            }
+
+            .wk-mobile-7 {
+                width: 58.333333%;
+            }
+
+            .wk-mobile-8 {
+                width: 66.666667%;
+            }
+
+            .wk-mobile-9 {
+                width: 75%;
+            }
+
+            .wk-mobile-10 {
+                width: 83.333333%;
+            }
+
+            .wk-mobile-11 {
+                width: 91.666667%;
+            }
+
+            .wk-mobile-12 {
+                width: 100%;
+            }
+        }
+
         body {
             background-image: url('{% static "CareConnect/images/background3.png" %}');
             /* Specify the path to your background image */
@@ -63,34 +274,50 @@
 </head>
 
 <body>
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+            <p class="text-blk heading">
+                About Us
+            </p>
+            <p>Developer Student Clubs Symbiosis Institute Of Technology, Pune is a Google Developers program for
+                university students to learn skills in the domains of mobile development, web development, machine
+                learning, and cloud (primarily). We also help encourage different other domains like competitive
+                programming, ethical hacking, AR/VR, etc. The club is open to any student, ranging from novice
+                developers who are just starting, to advanced developers who want to further their skills. The club is
+                intended as a space for students to try out new ideas and collaborate to solve real-life problems.</p>
+            <h3>What we do:</h3>
 
-    <div class="container">
-        <h1>About Us</h1>
-        <p>Developer Student Clubs Symbiosis Institute Of Technology, Pune is a Google Developers program for
-            university
-            students to learn skills in the domains of mobile development, web development, machine learning, and cloud
-            (primarily). We also help encourage different other domains like competitive programming, ethical hacking,
-            AR/VR, etc. The club is open to any student, ranging from novice developers who are just starting, to
-            advanced developers who want to further their skills. The club is intended as a space for students to try
-            out new ideas and collaborate to solve real-life problems.</p>
-
-        <h3>What we do:</h3>
-
-        <ul>
-            <li>Hands-on workshops</li>
-            <li>Collaborative events with companies and fellow DSC</li>
-            <li>Compete in the DSC Solution Challenge</li>
-            <li>Google Cloud Study Jams</li>
-            <li>Android Study Jams</li>
-            <li>Expert talks by industry experts</li>
-            <li>Build projects</li>
-            <li>Join our Discord Server to not miss any of the interesting updates, fun activities, and much more.</li>
-        </ul>
-
-
-
-
-
+            <ul>
+                <li>Hands-on workshops</li>
+                <li>Collaborative events with companies and fellow DSC</li>
+                <li>Compete in the DSC Solution Challenge</li>
+                <li>Google Cloud Study Jams</li>
+                <li>Android Study Jams</li>
+                <li>Expert talks by industry experts</li>
+                <li>Build projects</li>
+                <li>Join our Discord Server to not miss any of the interesting updates, fun activities, and much more.
+                </li>
+            </ul>
+            <div class="social-icons-container">
+                <a class="social-icon">
+                    <img class="socialIcon image-block"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb33.png">
+                </a>
+                <a class="social-icon">
+                    <img class="socialIcon image-block"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb34.png">
+                </a>
+                <a class="social-icon">
+                    <img class="socialIcon image-block"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb35.png">
+                </a>
+                <a class="social-icon">
+                    <img class="socialIcon image-block"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb36.png">
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
