@@ -50,3 +50,11 @@ def events(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
+
+def gallery_views(request):
+    return render(request, 'gallery.html')

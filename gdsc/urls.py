@@ -9,5 +9,6 @@ urlpatterns = [
     path('index.html', views.index, name='index'),
     path("tracks.html", views.tracks, name="tracks"),
     path("events.html", views.events, name="events"),
-    path("contact.html", views.contact, name="contact")
+    path("contact.html", views.contact, name="contact"),
+    path("gallery.html", views.gallery, name="gallery")
 ]
