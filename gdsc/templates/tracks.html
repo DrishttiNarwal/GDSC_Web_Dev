@@ -1,9 +1,29 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="{% static 'tracks_design.css' %}">
     <title>Tracks</title>
     <style>
+        .header {
+            position: fixed;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            background-color: lightgrey;
+            /* Change the background color of the header */
+            padding: 50px 50px;
+            /* Adjust padding to make the header broader */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
+            margin-top: 50px;
+        }
+
         html,
         body {
             background-color: #DB4437;
@@ -22,13 +42,41 @@
             /* Added to stack elements vertically */
         }
 
+        .header {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            background-color: lightgrey;
+            /* Change the background color of the header */
+            padding: 50px 50px;
+            /* Adjust padding to make the header broader */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
+        }
+
         h1 {
             font-size: 4rem;
             /* Set font size of the heading */
             color: black;
-            /* Set text color to white */
+            /* Set text color to black */
             margin-top: 20px;
             /* Added space above the heading */
+            position: relative;
+        }
+
+        h1:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #333;
         }
 
         .content {
@@ -42,22 +90,10 @@
             /* Add padding to provide some spacing around the text */
         }
 
-        .track-name-left {
-            text-align: left;
-            /* Align text to the left */
-            font-weight: bold;
-        }
-
-        .track-name-right {
-            text-align: right;
-            /* Align text to the right */
-
-        }
 
         .track-name {
             font-weight: bold;
             /* Make track names bold */
-
 
         }
 
@@ -77,76 +113,93 @@
 </head>
 
 <body>
-    <h1>Tracks</h1>
-    <div class="content">
-        <p><span class="track-name track-name-left">Web Development</span></p>
-        <p>Web development, a cornerstone of the digital age, encompasses the creation, enhancement, and maintenance of
-            websites and web applications. It empowers individuals and businesses to establish their online presence,
-            engage with users, and deliver immersive digital experiences. Through platforms like Google Developer
-            Student Clubs (GDSC), aspiring developers explore the latest technologies, collaborate on innovative
-            projects, and hone their skills in coding, design, and problem-solving, preparing them for a dynamic and
-            ever-evolving field at the forefront of technology.</p>
-        <p><span class="track-name right-align">DevOps</span></p>
-        <p>DevOps, an integral part of modern software development practices, is a dynamic track fostered by Google
-            Developer Student Clubs (GDSC). This track emphasizes the collaboration between software development and IT
-            operations teams to streamline the software delivery process, from coding and testing to deployment and
-            monitoring. GDSC members exploring DevOps delve into tools and methodologies such as continuous
-            integration/continuous deployment (CI/CD), infrastructure as code (IaC), and containerization with Docker
-            and Kubernetes. Through workshops, hackathons, and real-world projects, participants learn to automate
-            workflows, improve efficiency, and enhance collaboration, enabling them to contribute effectively to
-            software projects in both academic and professional settings. With its focus on agility, collaboration, and
-            automation, the DevOps track equips GDSC members with the skills necessary to thrive in the fast-paced world
-            of software development.</p>
-        <p><span class="track-name">Cloud</span></p>
-        <p>Cloud computing, a fundamental aspect of modern technology, is a track often explored by Google Developer
-            Student Clubs (GDSC). This track delves into the vast realm of cloud services offered by platforms like
-            Google Cloud Platform (GCP), Amazon Web Services (AWS), and Microsoft Azure. Through workshops, seminars,
-            and hands-on projects, GDSC members gain insights into cloud computing fundamentals, including
-            infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS).
-            Participants learn how to leverage cloud technologies to build scalable, secure, and cost-effective
-            solutions, empowering them to innovate in various domains such as web applications, machine learning, and
-            big data analytics. With the increasing demand for cloud-native solutions, the Cloud track equips GDSC
-            members with the knowledge and skills needed to thrive in the rapidly evolving tech landscape.</p>
-        <p><span class="track-name">Android</span></p>
-        <p>The Android track within Google Developer Student Clubs (GDSC) offers a comprehensive exploration into mobile
-            app development, particularly focusing on the Android platform. Through a blend of workshops, seminars, and
-            hands-on projects, GDSC members learn the fundamentals of Android app development using languages like Java
-            or Kotlin and popular development frameworks like Android Studio. Participants delve into topics such as
-            user interface design, data storage, networking, and integration of advanced features like location-based
-            services and push notifications. By gaining proficiency in Android development tools and best practices,
-            members of GDSC Android track cultivate the skills needed to create innovative, user-centric mobile
-            applications that cater to diverse needs and preferences, thereby contributing to the vibrant ecosystem of
-            mobile technology.</p>
-        <p><span class="track-name">Game Development</span></p>
-        <p>Within Google Developer Student Clubs (GDSC), the Game Development track provides an exciting journey into
-            the realm of game creation, fostering a community of aspiring game developers eager to explore the
-            intricacies of game design, programming, and storytelling. Through a blend of workshops, hackathons, and
-            collaborative projects, participants delve into various aspects of game development, including game engines
-            like Unity or Unreal Engine, scripting languages such as C# or JavaScript, and the principles of game design
-            and mechanics. Members gain hands-on experience in building and refining games for different platforms,
-            honing their skills in graphics, animation, sound design, and user interaction. By immersing themselves in
-            the dynamic world of game development, GDSC members in the Game Development track unleash their creativity
-            and technical prowess to craft immersive, engaging gaming experiences that captivate audiences and push the
-            boundaries of interactive entertainment.</p>
-        <p><span class="track-name">Flutter</span></p>
-        <p>Within Google Developer Student Clubs (GDSC), the Flutter track offers an innovative platform for students to
-            explore cross-platform app development using Google's Flutter framework. Participants dive into Flutter's
-            rich ecosystem, learning to build beautiful, fast, and natively compiled applications for mobile, web, and
-            desktop from a single codebase. Through workshops, coding challenges, and hands-on projects, members gain
-            proficiency in Dart programming, UI design, state management, and integration with Firebase services. The
-            Flutter track empowers students to create dynamic, feature-rich applications with ease, fostering a
-            community of developers equipped to address modern app development challenges and deliver impactful
-            solutions across diverse platforms.</p>
-        <p><span class="track-name">Artificial Intelligence</span></p>
-        <p>In Google Developer Student Clubs (GDSC), the Artificial Intelligence track delves into the cutting-edge
-            field of AI, empowering students to explore the realms of machine learning, deep learning, and neural
-            networks. Through workshops, seminars, and practical projects, participants gain hands-on experience in
-            developing AI-powered solutions for various domains, including image recognition, natural language
-            processing, and predictive analytics. With access to Google's AI tools and platforms such as TensorFlow and
-            Google Cloud AI, students learn to harness the potential of AI to address real-world problems and drive
-            innovation. The AI track fosters a vibrant community of learners passionate about leveraging AI technologies
-            to create intelligent and transformative applications that shape the future.</p>
+    <h1>TRACKS</h1>
     </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>Artificial Intelligence</h2>
+            <p>In GDSC, the AI track explores machine learning, deep learning, and neural networks. Students gain
+                hands-on experience in image recognition, NLP, and predictive analytics using TensorFlow and Google
+                Cloud AI.</p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>Flutter</h2>
+            <p>In GDSC, the Flutter track enables students to create cross-platform apps using Flutter. Participants
+                learn Dart, UI design, and Firebase integration to build dynamic applications.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>Game Development</h2>
+            <p>In GDSC, the Game Development track delves into game creation, fostering aspiring developers.
+                Participants learn game engines, scripting languages, and design principles to craft immersive gaming
+                experiences.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>Android Development</h2>
+            <p>In GDSC, the Android track explores mobile app development with workshops and projects. Members learn
+                Android fundamentals, UI design, and advanced features to create innovative mobile applications.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>Cloud</h2>
+            <p>
+                GDSC's Cloud track explores cloud computing with workshops and projects. Members learn to leverage cloud
+                technologies for scalable, secure solutions in web apps, ML, and big data.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h2>DevOps</h2>
+            <p>
+                GDSC's DevOps track fosters collaboration and automation in software development. Members learn CI/CD,
+                IaC, and containerization for efficient project delivery.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+
+
+
 </body>
 
 </html>

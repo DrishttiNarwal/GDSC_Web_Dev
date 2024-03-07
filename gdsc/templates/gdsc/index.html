@@ -92,7 +92,7 @@
 
         /* Other styles */
         body {
-            background-color: white;
+            background-color: lightskyblue;
             color: #fff;
             display: flex;
             font-family: 'Roboto', sans-serif;
@@ -101,6 +101,22 @@
             flex-direction: row;
             height: 100vh;
             margin: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            background-color: lightgrey;
+            /* Change the background color of the header */
+            padding: 50px 50px;
+            /* Adjust padding to make the header broader */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
         }
 
         .fixed {
@@ -167,6 +183,18 @@
             color: #007bff;
             text-decoration: none;
         }
+
+        .logo {
+            position: fixed;
+            top: 30px;
+            left: 20px;
+            width: 480px;
+            /* Adjust width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            z-index: 999;
+            /* Ensure it stays on top of other content */
+        }
     </style>
     <!-- Include Roboto font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
@@ -177,20 +205,22 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <img src="{% static 'gdsc/images/gdsc_main_logo.png' %}" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="about.html">About Us</a>
+            <a href="tracks.html">Tracks</a>
+            <a href="events.html">Events</a>
+            <a href="our_team.html">Our Team</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <img src="{% static 'gdsc/images/gdsc_main_logo.png' %}" class="logo">
     <div style="height: 600px;"></div>
     <h2 data-text="GDSC">GDSC</h2>
-
-
-    <!-- Navigation bar -->
-    <nav class="navbar">
-        <a href="about.html">About Us</a>
-        <a href="tracks.html">Tracks</a>
-        <a href="events.html">Events</a>
-        <a href="our_team.html">Our Team</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-
-    </nav>
 
     <!-- Newly added HTML -->
     <main class="Main" role="main">
@@ -198,6 +228,8 @@
         <!-- Join Us button -->
         <div class="join-button">
             <a href="#" class="join-link">Join Us</a>
+            <p style="color: black; margin-top: 5px;">Connect | Learn | Grow</p>
+        </div>
 
     </main>
 
