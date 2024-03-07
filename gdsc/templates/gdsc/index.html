@@ -5,17 +5,94 @@
 
 <head>
     <link rel="stylesheet" href="{% static 'effect.css' %}">
-    <script src="{% static 'script.js' %}" type="text/javascript"></script>
-
     <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'script.js' %}" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDSC Website</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: darkgray;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 14vw;
+            color: darkgray;
+            -webkit-text-stroke: 0.3vw black;
+            text-transform: uppercase;
+        }
+
+        h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: yellow;
+            -webkit-text-stroke: 0vw black;
+            border-right: 2px solid black;
+            overflow: hidden;
+            animation: animate 6s linear infinite;
+        }
+
+        @keyframes animate {
+
+            0%,
+            10% {
+                width: 0;
+                color: darkgray;
+            }
+
+            20%,
+            30% {
+                color: #4285F4;
+                /* Google Blue */
+            }
+
+            40%,
+            50% {
+                color: #FBBC05;
+                /* Yellow */
+            }
+
+            60%,
+            70% {
+                color: #EA4335;
+                /* Red */
+            }
+
+            80%,
+            90% {
+                color: #34A853;
+                /* Green */
+            }
+
+            100% {
+                width: 100%;
+                color: #34A853;
+                /* Green */
+            }
+        }
+
         /* Other styles */
         body {
-            background-color: skyblue;
+            background-color: white;
             color: #fff;
             display: flex;
             font-family: 'Roboto', sans-serif;
@@ -100,18 +177,9 @@
 </head>
 
 <body>
-    <h3 class="fixed">Click the letters!</h3>
-    <div class="word">
-        <span>M</span>
-        <span>A</span>
-        <span>N</span>
-        <span>G</span>
-        <span>U</span>
-    </div>
-    <footer>
-        <p>Created with <i class="fa fa-heart"></i> by <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        </p>
-    </footer>
+    <div style="height: 600px;"></div>
+    <h2 data-text="GDSC">GDSC</h2>
+
 
     <!-- Navigation bar -->
     <nav class="navbar">
@@ -128,13 +196,8 @@
         <!-- Join Us button -->
         <div class="join-button">
             <a href="#" class="join-link">Join Us</a>
-        </div>
-    </main>
 
-    <footer class="footer">
-        <p>Created with <i class="fa fa-heart"></i> by <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        </p>
-    </footer>
+    </main>
 
 </body>
 
